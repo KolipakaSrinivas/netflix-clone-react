@@ -31,3 +31,14 @@ body{
 .form-control{
     box-shadow: none !important;
 }
+
+.singup{
+    color:rgba(212, 212, 212, 0.75)
+};
+.thispage{
+  color:   rgba(212, 212, 212, 0.75);
+}
+
+#jjj{
+    width:100%;
+}

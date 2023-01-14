@@ -1,10 +1,12 @@
 import { Fragment} from 'react'
 import './App.css'
+import { Routes,Route } from 'react-router-dom'
 
 
 
 
-import Login from './components/loginpage/Login.component'
+import Login from '../src/components/loginpage/Login.component'
+import Home from './components/homepage/HomePage.component'
 
 function App() {
   
@@ -12,7 +14,12 @@ function App() {
   return (
 
     <Fragment>
-      <Login/>
+      <Routes>
+        <Route  path='/' element={<Login/>}/>
+        <Route path='/home' element={<Home></Home>}/>
+      
+
+      </Routes>
 
     </Fragment>
     
