@@ -1,15 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Fragment} from 'react'
 import './App.css'
 
+
+
+
+import Login from './components/loginpage/Login.component'
+
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div className="App">
+
+    <Fragment>
+      <Login/>
+
+    </Fragment>
+    
+
       
        
-    </div>
+    
   )
 }
 
