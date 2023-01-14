@@ -1,5 +1,6 @@
 import { Fragment} from 'react'
 import './App.css'
+import '../src/components/movesection/move.style.css'
 import { Routes,Route } from 'react-router-dom'
 
 
@@ -7,6 +8,7 @@ import { Routes,Route } from 'react-router-dom'
 
 import Login from '../src/components/loginpage/Login.component'
 import Home from './components/homepage/HomePage.component'
+import MoveSection from './components/movesection/MoveSection.component'
 
 function App() {
   
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         <Route  path='/' element={<Login/>}/>
         <Route path='/home' element={<Home></Home>}/>
+        <Route path='/movesection' element={<MoveSection/>}/>
       
 
       </Routes>
