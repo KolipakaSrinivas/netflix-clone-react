@@ -8,26 +8,21 @@ import { json } from 'react-router-dom'
 function MoveSection() {
 
 
-  const [move,setMove] = useState({})
+  const [move,setMove] = useState([])
 
 
-  const getMoveDetals  = async () => {
+  const getMoveDetals = async () => {
 
-    const url = 'api.themoviedb.org/3/movie/157336?api_key=944509ad6c77ddf8ac96d3c771a60ecd&append_to_response=videos,images'
+    // const url = 'api.themoviedb.org/3/movie/157336?api_key=944509ad6c77ddf8ac96d3c771a60ecd&append_to_response=videos,images'
+    const url = 'https://api.themoviedb.org/3/movie/157336?api_key=944509ad6c77ddf8ac96d3c771a60ecd'
 
-    let response = await fetch(url);
+      const sri = await  axios.get(url)
 
-if (response.ok) { // if HTTP-status is 200-299
-  // get the response body (the method explained below)
-  let json = await response.json();
-} else {
-  alert("HTTP-Error: " + response.status);
-}
-
+    setMove(sri)
     
   }
 
-  console.log(move)
+  // console.log(move.data.budget)
 
   useEffect(()=>{
     getMoveDetals()
@@ -41,6 +36,11 @@ if (response.ok) { // if HTTP-status is 200-299
 
     return(
         <Fragment>
+
+          {move.map((move)=>(
+            <h1>{move.budget}</h1>
+        ))}
+          
           
     
              
