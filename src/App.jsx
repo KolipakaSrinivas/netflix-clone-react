@@ -1,6 +1,6 @@
 import { Fragment} from 'react'
 import './App.css'
-import '../src/components/movesection/move.style.css'
+import '../src/components/movesection/move.css'
 import { Routes,Route } from 'react-router-dom'
 
 
