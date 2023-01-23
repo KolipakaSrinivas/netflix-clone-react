@@ -6,13 +6,12 @@ import './style.css'
 function NavBar() {
     return(
         <Fragment>
-            
              <div className='navigation'>
-        <div className='mainNavigation'>
-            <img className='logo' src='./logo.png' alt="logo" />
+                <div className='mainNavigation'>
+                    <img className='logo' src='./logo.png' alt="logo" />
 
             <div className='nav'>
-            <ul className='navigationList'>
+                <ul className='navigationList'>
                     <li className='navigationItem'>
                         <a href="/">Home</a>
                     </li>
@@ -28,10 +27,9 @@ function NavBar() {
                     <li className='navigationItem'>
                         <a href="/">My List</a>
                     </li>
-            </ul>
+                </ul>
             </div>
         </div>
-        {/* <!-- <SecondaryNavigation /> --> */}
     </div>
         
         </Fragment>
