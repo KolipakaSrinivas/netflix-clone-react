@@ -4,9 +4,9 @@ import { Fragment} from 'react'
 import { Routes,Route } from 'react-router-dom'
 
 
-import NavBar from './components/NavBar/NavBar.component'
 
-import Login from './components/Login/Login.component'
+import Home from './components/Home/Homepage.component'
+import Landing from './components/landing/landing.component'
 
 
 function App() {
@@ -16,13 +16,15 @@ function App() {
 
     
     <Fragment>
-      <NavBar/>
+      {/* <NavBar/> */}
+      
       
       <Routes>
-        {/* <Route  path='/' element={<Login/>}/>
-        <Route path='/home' element={<Home></Home>}/>
-        <Route path='/movesection' element={<MoveSection/>}/> */}
+        
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/landing' element={<Landing/>}/>
       
+       
 
       </Routes>
 

@@ -1,6 +1,7 @@
-/* body{
+body{
     height: 100vh;
     width: 100%;
+    background-image: url('./login-bg.jpeg');
 }
 
 
@@ -19,7 +20,7 @@
     left: 0;
     margin: 0 40px;
     z-index: 1000;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
 }
 
@@ -53,10 +54,10 @@
 
 li{
     color: antiquewhite;
-} */
+}
 
 
-*,*::after,*::before{
+/* *,*::after,*::before{
     box-sizing: border-box;
 }
 
@@ -80,10 +81,10 @@ body{
     padding: 20px 26px;
     
     /* height: fit-content; */
-    /* max-width: 102px; */
-}
-
-.navigationList{
+    /* max-width: 102px; */ 
+/* } */
+/* 
+/* .navigationList{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,11 +96,5 @@ ul,li {
     gap: 25px;
     margin-left: 20px;
     font-size: 1rem;
-    
-}
-
-a{
-    color:white;
-    text-decoration: none;
-    cursor: pointer;
-}
+     */
+/* } */
