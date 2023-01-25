@@ -10,7 +10,7 @@ function NavBar() {
                 <div className='mainNavigation'>
                     <img className='logo' src='./logo.png' alt="logo" />
 
-            <div className='nav'>
+            <div className='nav' id='nav'>
                 <ul className='navigationList'>
                     <li className='navigationItem'>
                         <a href="/">Home</a>
