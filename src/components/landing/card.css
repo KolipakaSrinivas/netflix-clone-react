@@ -1,10 +1,10 @@
-/* 
-body {
-    background-image: url(./img//background.jpg);
-    background-position: center;
-} */
+.movelist {
+    display: grid;
+    padding: 60px;
+    gap: 20px;
+    grid-template-columns:repeat(3,200px);
+}
 
-body {
-    background: rgb(255,0,0);
-background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(12,4,0,0.9866071428571429) 54%, rgba(32,16,14,1) 100%);
+h2 {
+    color: black;
 }

@@ -1,17 +1,45 @@
-import React from 'react'
+import {React,useEffect,useState} from 'react'
 import './card.css'
-
+import axios from 'axios';
 import NavBar from '../NavBar/NavBar.component'
-import background from './img/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg';
+// import background from './img/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg';
+
+
+
+import MoveCard from '../MoveCard/MoveCard.component';
 
 function Search() {
+
+    const [movesList,setMovesList] = useState(null)
+
+
+    const getmoves = async () => {
+        const url = 'https://api.themoviedb.org/3/movie/popular?api_key=944509ad6c77ddf8ac96d3c771a60ecd&language=en-US&page=1'
+        const response  = await axios.get(url)
+        setMovesList(response.data.results)
+    }
+
+    useEffect(()=>{
+        getmoves()
+    },[])
+
+    console.log(movesList)
+
+
     return(
         <div> 
-        <NavBar/>
-          
+            <NavBar/>
+            <div className='movelist'>
+                {
+                  movesList && movesList.map((movie,index)=>{
+                    return  <MoveCard movie={movie} key={index}/>
+                   })
+                }
+            </div>
         </div>
     )
 }
+
 
 export default Search
 
