@@ -1,6 +1,8 @@
 import React from 'react'
 import { Fragment } from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './home.css'
 
 function Home() {
@@ -23,7 +25,7 @@ function Home() {
                     <option>తెలుగు</option>
                 </select>
             </div>
-            <a class="button" href="/login">Sing In</a>
+            <a class="button" href="#"><Link to='/search'>Sing In</Link></a>
         </div>
     </header>
     <div class="splash cta">

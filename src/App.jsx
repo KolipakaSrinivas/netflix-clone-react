@@ -6,7 +6,7 @@ import { Routes,Route } from 'react-router-dom'
 
 
 import Home from './components/Home/Homepage.component'
-import Landing from './components/landing/landing.component'
+import Search from './components/landing/Search.component'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
 
         
         <Route path='/' element={<Home/>}/>
-        <Route path='/landing' element={<Landing/>}/>
+        <Route path='/search' element={<Search/>}/>
       
        
 
