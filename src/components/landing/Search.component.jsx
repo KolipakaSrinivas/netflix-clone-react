@@ -8,7 +8,10 @@ import NavBar from '../NavBar/NavBar.component'
 
 import MoveCard from '../MoveCard/MoveCard.component';
 
+
+
 function Search() {
+
 
     const [movesList,setMovesList] = useState(null)
 
@@ -21,21 +24,24 @@ function Search() {
 
     useEffect(()=>{
         getmoves()
+      
     },[])
 
-    console.log(movesList)
+    // console.log(searchmovies)
+
 
 
     return(
-        <div> 
+        <div className='container'> 
             <NavBar/>
-            <div className='movelist'>
-                {
-                  movesList && movesList.map((movie,index)=>{
-                    return  <MoveCard movie={movie} key={index}/>
-                   })
-                }
+
+         {/* <main className='main'> */}
+            <div className="card-list">
+                {movesList && movesList.filter(movie => movie.poster_path).map(movie => (
+                   <MoveCard movie={movie} key={movie.id}/>
+                ))}
             </div>
+        {/* </main> */}
         </div>
     )
 }

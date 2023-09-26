@@ -1,5 +1,5 @@
 import { Fragment} from 'react'
-// import './App.css'
+import './App.css'
 // import '../src/components/movesection/move.css'
 import { Routes,Route } from 'react-router-dom'
 
@@ -16,19 +16,12 @@ function App() {
 
     
     <Fragment>
-      {/* <NavBar/> */}
-      
-      
+      {/* <NavBar/> */}      
       <Routes>
-
         
         <Route path='/' element={<Home/>}/>
-        <Route path='/search' element={<Search/>}/>
-      
-       
-
+        <Route path='/search' element={<Search/>}/>     
       </Routes>
-
     </Fragment>
     
 
